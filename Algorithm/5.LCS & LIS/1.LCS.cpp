@@ -24,10 +24,8 @@ int LCS(char* X, char* Y, int lengthX, int lengthY, char* lcsString){
 
     i = lengthX;
     j = lengthY;
-    while (i > 0 && j > 0)
-    {
-        if (X[i - 1] == Y[j - 1])
-        {
+    while (i > 0 && j > 0){
+        if (X[i - 1] == Y[j - 1]){
             lcsString[index - 1] = X[i - 1];
             i--;
             j--;
